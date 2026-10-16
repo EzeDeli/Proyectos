@@ -87,8 +87,12 @@ html{
     font-family: 'Righteous';
 }
 .inicio .contenido-banner h2{
-    font-size: 15px;
-    font-weight: normal;
+    font-size: 18px;
+    font-weight: 600;
+}
+.inicio .contenido-banner .subtitulo{
+    font-size: 14px;
+    margin-top: 8px;
 }
 .inicio .contenido-banner .redes a{
     color: #6B8E23;
@@ -149,6 +153,9 @@ html{
 .sobremi .fila .col ul li{
     margin: 12px 0;
 }
+.sobremi .fila .col ul li a{
+    color: #000000;
+}
 .sobremi .fila .col ul li strong{
     display: inline-block;
     color: #6B8E23;
@@ -182,7 +189,7 @@ html{
     font-size: 30px;
     margin-bottom: 10px;
 }
-.sobremi button{
+.sobremi button, .portfolio button, .contacto-simple button{
     cursor: pointer;
     background-color: transparent;
     border: 2px solid #000000;
@@ -195,7 +202,7 @@ html{
     position: relative;
     z-index: 10;
 }
-.sobremi button .overlay{
+.sobremi button .overlay, .portfolio button .overlay, .contacto-simple button .overlay{
     position: absolute;
     top: 0;
     left: 0;
@@ -205,7 +212,7 @@ html{
     z-index: -1;
     transition: 1s;
 }
-.sobremi button:hover .overlay{
+.sobremi button:hover .overlay, .portfolio button:hover .overlay, .contacto-simple button:hover .overlay{
     width: 100%;
 }
 /* SECCION S K I L L S */
@@ -237,129 +244,76 @@ html{
     font-family: 'Righteous';
     margin-bottom: 25px;
 }
-.skills .skill > span{
-    font-weight: bold;
-    display: block;
+.skills .grupo-skill{
+    margin-bottom: 25px;
+}
+.skills .grupo-skill h4{
+    font-size: 18px;
     margin-bottom: 10px;
 }
-.skills .skill .barra-skill{
-    height: 8px;
-    width: 100%;
-    background-color: #6a8e23;
-    position: relative;
-    margin-bottom: 30px;
+.skills .grupo-skill p{
+    line-height: 22px;
 }
-.skills .skill .progreso{
-    background-color: #6B8E23;
-    height: 100%;
-    width: 0%;
-    position: relative;
-    top: 0;
-    left: 0;
-    height: 8px;
+.skills .etiquetas{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
 }
-.skills .skill .barra-skill span{
-    position: absolute;
-    height: 40px;
-    width: 40px;
+.skills .etiquetas li{
     background-color: #6B8E23;
-    border-radius: 50px;
-    line-height: 40px;
+    color: #ffffff;
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 15px;
+}
+/* SECCION SERVICIOS */
+.servicios{
+    background-color: #D3D3D3;
+    color: #000000;
+    padding: 50px 20px;
+}
+.servicios .contenido-seccion{
+    max-width: 1100px;
+    margin: auto;
+}
+.servicios h2{
+    font-size: 48px;
+    font-family: 'Righteous';
     text-align: center;
-    top: -17px;
-    right: -15px;
-    font-size: 14px;
+    padding: 20px 0;
 }
-/* Estas clases se agregaran dinamicamente mediante javascript */
-.skills .skill .excel{
-    width: 0%;
-    animation: 2s excel forwards;
+.servicios .intro{
+    text-align: center;
+    font-size: 18px;
+    line-height: 24px;
+    max-width: 700px;
+    margin: 0 auto 30px auto;
 }
-@keyframes excel {
-    0%{width: 0%;}
-    100%{width: 80%;}
+.servicios .galeria-servicios{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 20px;
 }
-
-.skills .skill .tableau{
-    width: 0%;
-    animation: 2s tableau forwards;
+.servicios .servicio{
+    background-color: #6a8e239c;
+    padding: 25px;
+    border-radius: 10px;
+    transition: .3s;
 }
-@keyframes tableau {
-    0%{width: 0%;}
-    100%{width: 50%;}
+.servicios .servicio:hover{
+    background-color: #6B8E23;
 }
-
-.skills .skill .powerbi{
-    width: 0%;
-    animation: 2s powerbi forwards;
+.servicios .servicio i{
+    font-size: 32px;
+    margin-bottom: 15px;
 }
-@keyframes powerbi {
-    0%{width: 0%;}
-    100%{width: 60%;}
+.servicios .servicio h3{
+    font-size: 20px;
+    margin-bottom: 10px;
 }
-
-.skills .skill .sql{
-    width: 0%;
-    animation: 2s sql forwards;
-}
-@keyframes sql {
-    0%{width: 0%;}
-    100%{width: 65%;}
-}
-
-.skills .skill .python{
-    width: 0%;
-    animation: 2s python forwards;
-}
-@keyframes python {
-    0%{width: 0%;}
-    100%{width: 55%;}
-}
-
-.skills .skill .comunicacion{
-    width: 0%;
-    animation: 2s comunicacion forwards;
-}
-@keyframes comunicacion {
-    0%{width: 0%;}
-    100%{width: 85%;}
-}
-
-.skills .skill .trabajoenequipo{
-    width: 0%;
-    animation: 2s trabajoenequipo forwards;
-}
-@keyframes trabajoenequipo {
-    0%{width: 0%;}
-    100%{width: 80%;}
-}
-
-.skills .skill .creatividad{
-    width: 0%;
-    animation: 2s creatividad forwards;
-}
-@keyframes creatividad {
-    0%{width: 0%;}
-    100%{width: 90%;}
-}
-
-.skills .skill .empatia{
-    width: 0%;
-    animation: 2s empatia forwards;
-}
-@keyframes empatia {
-    0%{width: 0%;}
-    100%{width: 80%;}
-    
-}
-.skills .skill .adaptable{
-    width: 0%;
-    animation: 2s adaptable forwards;
-}
-@keyframes adaptable {
-    0%{width: 0%;}
-    100%{width: 75%;}
-    
+.servicios .servicio p{
+    line-height: 22px;
 }
 /* SECCION CURRICULUM */
 .curriculum{
@@ -420,6 +374,14 @@ html{
 }
 .curriculum .fila .item p{
     line-height: 24px;
+    margin-bottom: 10px;
+}
+.curriculum .fila .item ul{
+    padding-left: 20px;
+}
+.curriculum .fila .item ul li{
+    line-height: 24px;
+    margin-bottom: 6px;
 }
 .curriculum .fila .izq{
     border-right: 2px solid #54701c;
@@ -530,6 +492,25 @@ html{
     margin-bottom: 0px;
 }
 /* SECCION CONTACTO */
+.contacto-simple{
+    background-color: #D3D3D3;
+    color: #000000;
+    padding: 50px 20px 70px 20px;
+    text-align: center;
+}
+.contacto-simple .contenido-seccion{
+    max-width: 700px;
+    margin: auto;
+}
+.contacto-simple h2{
+    font-size: 48px;
+    font-family: 'Righteous';
+    padding: 20px 0;
+}
+.contacto-simple p{
+    font-size: 18px;
+    line-height: 24px;
+}
 .contacto{
     background: linear-gradient(to top, rgba(48, 51, 46, 0.8), rgb(82, 95, 79)),
     url(fotos/contacto.webp);
@@ -692,8 +673,8 @@ footer .arriba{
     .skills .fila .col{
         width: 100%;
     }
-    .skills .fila .col .barra-skill{
-        width: 100%;
+    .servicios h2, .contacto-simple h2{
+        font-size: 36px;
     }
 
     .curriculum .fila{

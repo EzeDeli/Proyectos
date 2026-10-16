@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Ezequiel Delipetro - Desarrollador de Sistemas y Datos. Optimización de bases de datos, integraciones con APIs y automatización de procesos. Disponible para proyectos freelance.">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>Portfolio</title>
+    <title>Ezequiel Delipetro | Desarrollador de Sistemas y Datos</title>
     <link rel="stylesheet" href="estilo.css">
 </head>
 <body>
@@ -19,9 +20,11 @@
                 <ul>
                     <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
                     <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+                    <li><a href="#servicios" onclick="seleccionar()">SERVICIOS</a></li>
                     <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
                     <li><a href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
                     <li><a href="#portfolio" onclick="seleccionar()">PORTFOLIO</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
                 </ul>
             </nav>
             <div class="nav-responsive" onclick="mostrarOcultarMenu()">
@@ -34,12 +37,15 @@
     <section id="inicio" class="inicio">
         <div class="contenido-banner">
             <div class="contenedor-img">
-                <img src="fotos/Perfil.jpg" alt="">
+                <img src="fotos/Perfil.jpg" alt="Foto de Ezequiel Delipetro">
             </div>
             <h1>Ezequiel Delipetro</h1>
-            <h2>Analista de Datos</h2>
+            <h2>Desarrollador de Sistemas y Datos</h2>
+            <p class="subtitulo">SQL · APIs · Automatización · Power BI</p>
             <div class="redes">
-                <a href="https://www.linkedin.com/in/ezedelipetro/"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://www.linkedin.com/in/ezedelipetro/" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://github.com/EzeDeli" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                <a href="mailto:e.delipetro@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
             </div>
         </div>
     </section>
@@ -48,10 +54,9 @@
     <section id="sobremi" class="sobremi">
         <div class="contenido-seccion">
             <h2>Sobre Mí</h2>
-            <p><span>¡Hola! Soy Ezequiel, un profesional en transición hacia el mundo de la tecnología, con un enfoque claro en el análisis y la ingeniería de datos.
-
-            </span> Mi experiencia previa en el área de la salud me enseñó a valorar la toma de decisiones basada en evidencia, una pasión que ahora he redirigido al ámbito empresarial. Para ello, estoy cursando la Tecnicatura en Desarrollo de Software y me he especializado en herramientas como SQL, Python, Tableau y Power BI.<br>
-                    Mi objetivo es claro: utilizar mis habilidades analíticas y técnicas para transformar datos complejos en soluciones prácticas e insights valiosos que impulsen el crecimiento.</p>
+            <p><span>¡Hola! Soy Ezequiel. Ayudo a empresas a que sus sistemas funcionen mejor: destrabo consultas lentas, limpio datos, conecto sistemas mediante APIs y automatizo tareas repetitivas.</span></p>
+            <p>Trabajo como desarrollador en el área de Sistemas de Digitrack, donde en 6 meses, como único desarrollador del proyecto y apoyándome en la IA, migré la aplicación web de la empresa a una plataforma low-code, optimicé las consultas que la trababan y automaticé la generación de tickets y avisos por mail.</p>
+            <p>Gran parte de mi trabajo es hablar con gerencia y con los operadores para entender las reglas del negocio. Vengo del área de la salud y de la atención al cliente, por eso entiendo el problema real antes de escribir una línea de código. Actualmente curso la Tecnicatura Superior en Desarrollo de Software.</p>
 
             <div class="fila">
                 <!-- datos personales -->
@@ -59,20 +64,16 @@
                     <h3>Datos Personales</h3>
                     <ul>
                         <li>
-                            <strong>Fecha de Nacimiento</strong>
-                            24-11-1994
-                        </li>
-                        <li>
-                            <strong>Celular</strong>
-                            +54 9 11 3085-1825
-                        </li>
-                        <li>
                             <strong>Email</strong>
-                            e.delipetro@gmail.com
+                            <a href="mailto:e.delipetro@gmail.com">e.delipetro@gmail.com</a>
                         </li>
                         <li>
                             <strong>Ubicación</strong>
                             Buenos Aires, Argentina
+                        </li>
+                        <li>
+                            <strong>Modalidad</strong>
+                            Remoto · Proyectos freelance
                         </li>
                     </ul>
                 </div>
@@ -113,7 +114,6 @@
                             <i class="fa-solid fa-person-hiking"></i>
                             <span>SENDERISMO</span>
                         </div>
-                        
                     </div>
                 </div>
             </div>
@@ -126,6 +126,36 @@
         </div>
     </section>
 
+    <!-- SECCION SERVICIOS -->
+    <section id="servicios" class="servicios">
+        <div class="contenido-seccion">
+            <h2>Servicios</h2>
+            <p class="intro">¿Tu sistema se pone lento, tenés procesos manuales que te consumen horas o datos dispersos en varios Excel? Te puedo ayudar con:</p>
+            <div class="galeria-servicios">
+                <div class="servicio">
+                    <i class="fa-solid fa-database"></i>
+                    <h3>Optimización de bases de datos</h3>
+                    <p>Consultas que se traban al crecer los datos, limpieza de registros inconsistentes y validaciones que no funcionan.</p>
+                </div>
+                <div class="servicio">
+                    <i class="fa-solid fa-gears"></i>
+                    <h3>Automatización de procesos</h3>
+                    <p>Integraciones entre sistemas mediante APIs, generación automática de tickets, alertas por mail y tareas programadas.</p>
+                </div>
+                <div class="servicio">
+                    <i class="fa-solid fa-arrow-right-arrow-left"></i>
+                    <h3>ETL y carga de datos</h3>
+                    <p>Llevo tus datos de Excel, CSV o APIs a una base de datos ordenada y lista para analizar.</p>
+                </div>
+                <div class="servicio">
+                    <i class="fa-solid fa-chart-column"></i>
+                    <h3>Dashboards y reportes</h3>
+                    <p>Tableros en Power BI, Tableau o Excel para que tomes decisiones con datos actualizados.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- SECCION SKILLS -->
     <section class="skills" id="skills">
         <div class="contenido-seccion">
@@ -134,89 +164,50 @@
                 <!-- Technical Skill -->
                 <div class="col">
                     <h3>Technical Skills</h3>
-                    <div class="skill">
-                        <span>Excel</span>
-                        <div class="barra-skill">
-                            <div class="progreso excel">
-                                <span>80%</span>
-                            </div>
-                        </div>
+                    <div class="grupo-skill">
+                        <h4>Bases de datos</h4>
+                        <ul class="etiquetas">
+                            <li>SQL</li>
+                            <li>Procedimientos almacenados</li>
+                            <li>Optimización de consultas</li>
+                            <li>Calidad de datos</li>
+                        </ul>
                     </div>
-                    <div class="skill">
-                        <span>Tableau</span>
-                        <div class="barra-skill">
-                            <div class="progreso tableau">
-                                <span>50%</span>
-                            </div>
-                        </div>
+                    <div class="grupo-skill">
+                        <h4>Desarrollo e integración</h4>
+                        <ul class="etiquetas">
+                            <li>Low-code</li>
+                            <li>APIs REST</li>
+                            <li>Python</li>
+                            <li>Pandas</li>
+                            <li>Airflow</li>
+                            <li>Docker</li>
+                            <li>Desarrollo asistido por IA</li>
+                        </ul>
                     </div>
-                    <div class="skill">
-                        <span>Power BI</span>
-                        <div class="barra-skill">
-                            <div class="progreso powerbi">
-                                <span>60%</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <span>SQL</span>
-                        <div class="barra-skill">
-                            <div class="progreso sql">
-                                <span>65%</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <span>Python</span>
-                        <div class="barra-skill">
-                            <div class="progreso python">
-                                <span>55%</span>
-                            </div>
-                        </div>
+                    <div class="grupo-skill">
+                        <h4>Análisis y visualización</h4>
+                        <ul class="etiquetas">
+                            <li>Power BI</li>
+                            <li>Tableau</li>
+                            <li>Excel</li>
+                        </ul>
                     </div>
                 </div>
                 <!-- Professional Skills -->
                 <div class="col">
                     <h3>Professional Skills</h3>
-                    <div class="skill">
-                        <span>Comunicación</span>
-                        <div class="barra-skill">
-                            <div class="progreso comunicacion">
-                                <span>85%</span>
-                            </div>
-                        </div>
+                    <div class="grupo-skill">
+                        <h4>Relevamiento de requisitos</h4>
+                        <p>Me reúno con gerencia y operadores para entender las reglas del negocio y traducirlas en soluciones.</p>
                     </div>
-                    <div class="skill">
-                        <span>Trabajo en Equipo</span>
-                        <div class="barra-skill">
-                            <div class="progreso trabajoenequipo">
-                                <span>80%</span>
-                            </div>
-                        </div>
+                    <div class="grupo-skill">
+                        <h4>Autonomía</h4>
+                        <p>Llevé adelante como único desarrollador la migración completa de una aplicación web en 6 meses.</p>
                     </div>
-                    <div class="skill">
-                        <span>Creatividad</span>
-                        <div class="barra-skill">
-                            <div class="progreso creatividad">
-                                <span>90%</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <span>Empatia</span>
-                        <div class="barra-skill">
-                            <div class="progreso empatia">
-                                <span>80%</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <span>Adaptable</span>
-                        <div class="barra-skill">
-                            <div class="progreso adaptable">
-                                <span>75%</span>
-                            </div>
-                        </div>
+                    <div class="grupo-skill">
+                        <h4>Comunicación</h4>
+                        <p>Más de 3 años en atención al cliente y capacitación de equipos: explico lo técnico en un lenguaje simple.</p>
                     </div>
                 </div>
             </div>
@@ -234,7 +225,7 @@
                         <h4>Tecnicatura Superior en Desarrollo de Software</h4>
                         <span class="casa">Instituto Superior "Leopoldo Marechal"</span>
                         <span class="fecha">03/2025 - Presente</span>
-                        <p>Formación técnica que me brinda una base sólida en lógica de programación, algoritmos y arquitectura de software, complementando perfectamente mi especialización en datos.<p>
+                        <p>Formación técnica en lógica de programación, algoritmos y arquitectura de software, que complementa mi especialización en datos.</p>
                         <div class="conectori">
                             <div class="circuloi"></div>
                         </div>
@@ -243,41 +234,61 @@
                         <h4>Data Engineering & Analytics</h4>
                         <span class="casa">Coder House</span>
                         <span class="fecha">01/2024 - 09/2024</span>
-                        <p>Formación intensiva enfocada en el ciclo de vida completo de los datos. Desde la extracción y transformación (ETL) con SQL y Python, hasta la visualización de insights de negocio con Power BI y Tableau para resolver problemas reales.<p>
+                        <p>Formación intensiva en el ciclo de vida completo de los datos: extracción y transformación (ETL) con SQL y Python, y visualización con Power BI y Tableau.</p>
                         <div class="conectori">
                             <div class="circuloi"></div>
                         </div>
                     </div>
                     <div class="item izq">
-                        <h4>Nutrición</h4>
+                        <h4>Licenciatura en Nutrición</h4>
                         <span class="casa">Universidad Nacional de La Matanza</span>
                         <span class="fecha">2014 - 2022</span>
-                        <p>Mi primera carrera, donde desarrollé una fuerte mentalidad analítica. Me especialicé en la interpretación de información, el seguimiento de indicadores y la toma de decisiones basadas en evidencia, habilidades que hoy potencio con herramientas tecnológicas.<p>
+                        <p>Mi primera carrera, donde desarrollé una fuerte mentalidad analítica: interpretación de información, seguimiento de indicadores y toma de decisiones basada en evidencia.</p>
                         <div class="conectori">
                             <div class="circuloi"></div>
-                        </div>  
+                        </div>
                     </div>
                 </div>
 
                 <div class="col derecha">
                     <h3>Experiencia de trabajo</h3>
                     <div class="item der">
-                        <h4>Nutricionista Independiente</h4>
-                        <span class="casa">Consultorio particular, gimnasios y clubs de fútbol.</span>
-                        <span class="fecha"></span>
-                        <p>Aplicación de habilidades transferibles en un rol analítico: interpretación de datos de clientes, seguimiento de KPIs de rendimiento y toma de decisiones basadas en evidencia.<p>
-                        </p>Análisis y visualización de datos: evaluación de métricas físicas para diseñar y optimizar planes nutricionales personalizados.</p>
+                        <h4>Desarrollador – Área de Sistemas</h4>
+                        <span class="casa">Digitrack</span>
+                        <span class="fecha">05/2026 - Presente</span>
+                        <p>Único desarrollador a cargo de la migración y la evolución de la aplicación web de la empresa, con desarrollo asistido por IA.</p>
+                        <ul>
+                            <li>Migración de la aplicación web a una plataforma low-code sobre una base de datos relacional.</li>
+                            <li>Optimización de consultas que trababan la aplicación al crecer el volumen de registros.</li>
+                            <li>Workers que consumen la API de un sistema externo de mesa de ayuda para generar tickets automáticamente y avisar por mail.</li>
+                            <li>Consumo de APIs externas y lectura automatizada de archivos Excel desde la base de datos.</li>
+                            <li>Limpieza de datos y desbloqueo de registros trabados por validaciones incorrectas.</li>
+                            <li>Relevamiento de reglas de negocio con gerencia y operadores.</li>
+                        </ul>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Asesor de Atención al Cliente</h4>
+                        <span class="casa">Swiss Medical Group</span>
+                        <span class="fecha">10/2020 - 02/2024</span>
+                        <ul>
+                            <li>Seleccionado para el área Life: atención personalizada a clientes y productores.</li>
+                            <li>Representante del área en las evaluaciones de calidad bajo normas ISO.</li>
+                            <li>Capacitación y onboarding de nuevos integrantes del equipo.</li>
+                        </ul>
                         <div class="conectord">
                             <div class="circulod"></div>
                         </div>
                     </div>
                     <div class="item der">
                         <h4>Nutricionista Independiente</h4>
-                        <span class="casa">Consultorio particular, gimnasios y clubs de fútbol.</span>
-                        <span class="fecha"></span>
-                        <p>Aseguramiento de la calidad del servicio mediante la evaluación de interacciones para garantizar el cumplimiento de estándares ISO.<p>
-                        </p>Capacitación y onboarding de nuevos miembros del equipo, transmitiendo procesos y mejores prácticas.</p>
-                        </p>Desarrollo de una alta capacidad de gestión del tiempo y productividad al equilibrar responsabilidades laborales con estudios académicos.</p>
+                        <span class="casa">Consultorio particular, gimnasios y clubes de fútbol</span>
+                        <ul>
+                            <li>Interpretación de datos de pacientes y seguimiento de indicadores de rendimiento.</li>
+                            <li>Evaluación de métricas físicas para diseñar y ajustar planes personalizados.</li>
+                        </ul>
                         <div class="conectord">
                             <div class="circulod"></div>
                         </div>
@@ -293,37 +304,66 @@
             <h2>PORTFOLIO</h2>
             <div class="galeria">
                 <div class="proyecto">
-                    <img src="fotos/N°1  Excel - Analisis y Dashboard Interactivo.PNG" alt="">
+                    <img src="fotos/N°4. ETL de Datos Climáticos - API, Pandas, Redshift y Docker.PNG" alt="Proyecto ETL de datos climáticos">
                     <div class="overlay">
-                        <h3>Excel</h3>
-                        <p>Analisis y Dashboard Interactivo</p>
+                        <h3>Data Engineering</h3>
+                        <p>ETL de Datos Climáticos: API, Pandas, Redshift, Airflow y Docker</p>
                     </div>
                 </div>
                 <div class="proyecto">
-                    <img src="fotos/N°2 Tableau - Análisis de Bodegas y Vinos.PNG" alt="">
+                    <img src="fotos/N°3 Power BI - Análisis de Facturación y Rendimiento de Adidas.PNG" alt="Dashboard de Power BI de Adidas">
+                    <div class="overlay">
+                        <h3>Power BI</h3>
+                        <p>Análisis de Facturación y Rendimiento de Adidas</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="fotos/N°2 Tableau - Análisis de Bodegas y Vinos.PNG" alt="Dashboard de Tableau de bodegas y vinos">
                     <div class="overlay">
                         <h3>Tableau</h3>
                         <p>Análisis de Bodegas y Vinos</p>
                     </div>
                 </div>
                 <div class="proyecto">
-                    <img src="fotos/N°3 Power BI - Análisis de Facturación y Rendimiento de Adidas.PNG" alt="">
+                    <img src="fotos/N°1  Excel - Analisis y Dashboard Interactivo.PNG" alt="Dashboard interactivo en Excel">
                     <div class="overlay">
-                        <h3>Power BI</h3>
-                        <p>Análisis de Facturación y Rendimiento de Adidas</p>
+                        <h3>Excel</h3>
+                        <p>Análisis y Dashboard Interactivo</p>
                     </div>
                 </div>
             </div>
+            <a href="https://github.com/EzeDeli" style="text-decoration: none;">
+                <button>
+                    Ver proyectos en GitHub <i class="fa-brands fa-github"></i>
+                    <span class="overlay"></span>
+                </button>
+            </a>
         </div>
     </section>
 
-        <!-- footer -->
+    <!-- SECCION CONTACTO -->
+    <section id="contacto" class="contacto-simple">
+        <div class="contenido-seccion">
+            <h2>¿Trabajamos juntos?</h2>
+            <p>Contame qué proceso querés mejorar y te respondo con una propuesta.</p>
+            <a href="mailto:e.delipetro@gmail.com?subject=Consulta%20por%20proyecto" style="text-decoration: none;">
+                <button>
+                    Escribime <i class="fa-solid fa-envelope"></i>
+                    <span class="overlay"></span>
+                </button>
+            </a>
+        </div>
+    </section>
+
+    <!-- footer -->
     <footer>
-        <a href="#inicio" class="arriba">
+        <a href="#inicio" class="arriba" aria-label="Volver arriba">
             <i class="fa-solid fa-angles-up"></i>
         </a>
         <div class="redes">
-            <a href="https://www.linkedin.com/in/ezedelipetro/"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="https://www.linkedin.com/in/ezedelipetro/" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="https://github.com/EzeDeli" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+            <a href="mailto:e.delipetro@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
         </div>
     </footer>
 
