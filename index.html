@@ -4,9 +4,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Ezequiel Delipetro - Desarrollador de Sistemas y Datos. Desarrollo web front-end y back-end, bases de datos, integraciones con APIs y automatización de procesos. Disponible para proyectos freelance.">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Ezequiel Delipetro | Desarrollador de Sistemas y Datos</title>
+    <meta name="description" content="Automatizo procesos y destrabo sistemas lentos: bases de datos, integraciones con APIs, desarrollo web y dashboards. Disponible para proyectos freelance.">
+    <!-- Vista previa al compartir el link en WhatsApp, LinkedIn, etc. -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://ezedeli.github.io/Proyectos/">
+    <meta property="og:title" content="Ezequiel Delipetro | Desarrollador de Sistemas y Datos">
+    <meta property="og:description" content="Automatizo procesos y destrabo sistemas lentos: bases de datos, APIs, desarrollo web y dashboards. Disponible para proyectos freelance.">
+    <meta property="og:image" content="https://ezedeli.github.io/Proyectos/fotos/compartir.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:locale" content="es_AR">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="icon" href="fotos/Perfil.jpg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="estilo.css">
 </head>
 <body>
@@ -19,11 +30,10 @@
             <nav id="nav">
                 <ul>
                     <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
-                    <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
                     <li><a href="#servicios" onclick="seleccionar()">SERVICIOS</a></li>
-                    <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
-                    <li><a href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
-                    <li><a href="#portfolio" onclick="seleccionar()">PORTFOLIO</a></li>
+                    <li><a href="#portfolio" onclick="seleccionar()">PROYECTOS</a></li>
+                    <li><a href="#como-trabajo" onclick="seleccionar()">CÓMO TRABAJO</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">SOBRE MÍ</a></li>
                     <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
                 </ul>
             </nav>
@@ -39,90 +49,16 @@
             <div class="contenedor-img">
                 <img src="fotos/Perfil.jpg" alt="Foto de Ezequiel Delipetro">
             </div>
-            <h1>Ezequiel Delipetro</h1>
-            <h2>Desarrollador de Sistemas y Datos</h2>
-            <p class="subtitulo">Desarrollo web · SQL · APIs · Automatización · Power BI</p>
-            <div class="redes">
-                <a href="https://www.linkedin.com/in/ezedelipetro/" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
-                <a href="https://github.com/EzeDeli" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
-                <a href="mailto:e.delipetro@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
-            </div>
-        </div>
-    </section>
-
-    <!-- SECCION SOBRE MI -->
-    <section id="sobremi" class="sobremi">
-        <div class="contenido-seccion">
-            <h2>Sobre Mí</h2>
-            <p><span>¡Hola! Soy Ezequiel. Ayudo a empresas a que sus sistemas funcionen mejor: destrabo consultas lentas, limpio datos, conecto sistemas mediante APIs y automatizo tareas repetitivas.</span></p>
-            <p>Trabajo como desarrollador en el área de Sistemas de Digitrack, donde en 6 meses, como único desarrollador del proyecto y apoyándome en la IA, migré la aplicación web de la empresa a una plataforma low-code, optimicé las consultas que la trababan y automaticé la generación de tickets y avisos por mail.</p>
-            <p>Gran parte de mi trabajo es hablar con gerencia y con los operadores para entender las reglas del negocio. Vengo del área de la salud y de la atención al cliente, por eso entiendo el problema real antes de escribir una línea de código. Actualmente curso la Tecnicatura Superior en Desarrollo de Software.</p>
-
-            <div class="fila">
-                <!-- datos personales -->
-                <div class="col">
-                    <h3>Datos Personales</h3>
-                    <ul>
-                        <li>
-                            <strong>Email</strong>
-                            <a href="mailto:e.delipetro@gmail.com">e.delipetro@gmail.com</a>
-                        </li>
-                        <li>
-                            <strong>Ubicación</strong>
-                            Buenos Aires, Argentina
-                        </li>
-                        <li>
-                            <strong>Modalidad</strong>
-                            Remoto · Proyectos freelance
-                        </li>
-                    </ul>
+            <div class="texto-banner">
+                <p class="saludo">Hola, soy Ezequiel Delipetro</p>
+                <h1>Automatizo procesos y destrabo sistemas lentos</h1>
+                <p class="bajada">Desarrollador de Sistemas. Te ayudo con bases de datos, integraciones por API, desarrollo web y reportes, para que tu negocio deje de perder horas en tareas manuales.</p>
+                <div class="botones-banner">
+                    <a class="boton-principal" href="#portfolio"><i class="fa-solid fa-folder-open"></i> Ver proyectos</a>
+                    <a class="boton-whatsapp" href="https://wa.me/5491130851825?text=Hola%20Ezequiel%2C%20vi%20tu%20web%20y%20quiero%20consultarte%20por%20un%20proyecto" target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i> Escribime por WhatsApp</a>
                 </div>
-
-                <!-- intereses -->
-                <div class="col">
-                    <h3>Intereses</h3>
-                    <div class="contenedor-intereses">
-                        <div class="interes">
-                            <i class="fa-solid fa-chess-rook"></i>
-                            <span>JUEGOS</span>
-                        </div>
-                        <div class="interes">
-                            <i class="fa-solid fa-dumbbell"></i>
-                            <span>ENTRENAR</span>
-                        </div>
-                        <div class="interes">
-                            <i class="fa-solid fa-record-vinyl"></i>
-                            <span>MUSICA</span>
-                        </div>
-                        <div class="interes">
-                            <i class="fa-regular fa-compass"></i>
-                            <span>VIAJAR</span>
-                        </div>
-                        <div class="interes">
-                            <i class="fa-solid fa-bicycle"></i>
-                            <span>CICLISMO</span>
-                        </div>
-                        <div class="interes">
-                            <i class="fa-solid fa-book-open"></i>
-                            <span>NOVELAS</span>
-                        </div>
-                        <div class="interes">
-                            <i class="fa-solid fa-cat"></i>
-                            <span>MASCOTAS</span>
-                        </div>
-                        <div class="interes">
-                            <i class="fa-solid fa-person-hiking"></i>
-                            <span>SENDERISMO</span>
-                        </div>
-                    </div>
-                </div>
+                <p class="disponible"><span class="punto"></span> Disponible para proyectos freelance · Remoto</p>
             </div>
-            <a href="https://drive.google.com/uc?export=download&id=1KXvJveujlauw6W_DVacvezHY80tvWcav" download style="text-decoration: none;">
-                <button>
-                    Descargar CV <i class="fa-solid fa-file-arrow-down"></i>
-                    <span class="overlay"></span>
-                </button>
-            </a>
         </div>
     </section>
 
@@ -161,155 +97,10 @@
         </div>
     </section>
 
-    <!-- SECCION SKILLS -->
-    <section class="skills" id="skills">
-        <div class="contenido-seccion">
-            <h2>Skills</h2>
-            <div class="fila">
-                <!-- Technical Skill -->
-                <div class="col">
-                    <h3>Technical Skills</h3>
-                    <div class="grupo-skill">
-                        <h4>Bases de datos</h4>
-                        <ul class="etiquetas">
-                            <li>SQL</li>
-                            <li>Procedimientos almacenados</li>
-                            <li>Optimización de consultas</li>
-                            <li>Calidad de datos</li>
-                        </ul>
-                    </div>
-                    <div class="grupo-skill">
-                        <h4>Desarrollo e integración</h4>
-                        <ul class="etiquetas">
-                            <li>Front-end</li>
-                            <li>Back-end</li>
-                            <li>HTML · CSS · JavaScript</li>
-                            <li>Low-code</li>
-                            <li>APIs REST</li>
-                            <li>Python</li>
-                            <li>Pandas</li>
-                            <li>Airflow</li>
-                            <li>Docker</li>
-                            <li>Desarrollo asistido por IA</li>
-                        </ul>
-                    </div>
-                    <div class="grupo-skill">
-                        <h4>Análisis y visualización</h4>
-                        <ul class="etiquetas">
-                            <li>Power BI</li>
-                            <li>Tableau</li>
-                            <li>Excel</li>
-                        </ul>
-                    </div>
-                </div>
-                <!-- Professional Skills -->
-                <div class="col">
-                    <h3>Professional Skills</h3>
-                    <div class="grupo-skill">
-                        <h4>Relevamiento de requisitos</h4>
-                        <p>Me reúno con gerencia y operadores para entender las reglas del negocio y traducirlas en soluciones.</p>
-                    </div>
-                    <div class="grupo-skill">
-                        <h4>Autonomía</h4>
-                        <p>Llevé adelante como único desarrollador la migración completa de una aplicación web en 6 meses.</p>
-                    </div>
-                    <div class="grupo-skill">
-                        <h4>Comunicación</h4>
-                        <p>Más de 3 años en atención al cliente y capacitación de equipos: explico lo técnico en un lenguaje simple.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- SECCION CURRICULUM -->
-    <section id="curriculum" class="curriculum">
-        <div class="contenido-seccion">
-            <h2>Curriculum</h2>
-            <div class="fila">
-                <div class="col izquierda">
-                    <h3>Educación</h3>
-                    <div class="item izq">
-                        <h4>Tecnicatura Superior en Desarrollo de Software</h4>
-                        <span class="casa">Instituto Superior "Leopoldo Marechal"</span>
-                        <span class="fecha">03/2025 - Presente</span>
-                        <p>Formación técnica en lógica de programación, algoritmos y arquitectura de software, que complementa mi especialización en datos.</p>
-                        <div class="conectori">
-                            <div class="circuloi"></div>
-                        </div>
-                    </div>
-                    <div class="item izq">
-                        <h4>Data Engineering & Analytics</h4>
-                        <span class="casa">Coder House</span>
-                        <span class="fecha">01/2024 - 09/2024</span>
-                        <p>Formación intensiva en el ciclo de vida completo de los datos: extracción y transformación (ETL) con SQL y Python, y visualización con Power BI y Tableau.</p>
-                        <div class="conectori">
-                            <div class="circuloi"></div>
-                        </div>
-                    </div>
-                    <div class="item izq">
-                        <h4>Licenciatura en Nutrición</h4>
-                        <span class="casa">Universidad Nacional de La Matanza</span>
-                        <span class="fecha">2014 - 2022</span>
-                        <p>Mi primera carrera, donde desarrollé una fuerte mentalidad analítica: interpretación de información, seguimiento de indicadores y toma de decisiones basada en evidencia.</p>
-                        <div class="conectori">
-                            <div class="circuloi"></div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col derecha">
-                    <h3>Experiencia de trabajo</h3>
-                    <div class="item der">
-                        <h4>Desarrollador – Área de Sistemas</h4>
-                        <span class="casa">Digitrack</span>
-                        <span class="fecha">05/2026 - Presente</span>
-                        <p>Único desarrollador a cargo de la migración y la evolución de la aplicación web de la empresa, con desarrollo asistido por IA.</p>
-                        <ul>
-                            <li>Migración de la aplicación web a una plataforma low-code sobre una base de datos relacional.</li>
-                            <li>Optimización de consultas que trababan la aplicación al crecer el volumen de registros.</li>
-                            <li>Workers que consumen la API de un sistema externo de mesa de ayuda para generar tickets automáticamente y avisar por mail.</li>
-                            <li>Consumo de APIs externas y lectura automatizada de archivos Excel desde la base de datos.</li>
-                            <li>Limpieza de datos y desbloqueo de registros trabados por validaciones incorrectas.</li>
-                            <li>Relevamiento de reglas de negocio con gerencia y operadores.</li>
-                        </ul>
-                        <div class="conectord">
-                            <div class="circulod"></div>
-                        </div>
-                    </div>
-                    <div class="item der">
-                        <h4>Asesor de Atención al Cliente</h4>
-                        <span class="casa">Swiss Medical Group</span>
-                        <span class="fecha">10/2020 - 02/2024</span>
-                        <ul>
-                            <li>Seleccionado para el área Life: atención personalizada a clientes y productores.</li>
-                            <li>Representante del área en las evaluaciones de calidad bajo normas ISO.</li>
-                            <li>Capacitación y onboarding de nuevos integrantes del equipo.</li>
-                        </ul>
-                        <div class="conectord">
-                            <div class="circulod"></div>
-                        </div>
-                    </div>
-                    <div class="item der">
-                        <h4>Nutricionista Independiente</h4>
-                        <span class="casa">Consultorio particular, gimnasios y clubes de fútbol</span>
-                        <ul>
-                            <li>Interpretación de datos de pacientes y seguimiento de indicadores de rendimiento.</li>
-                            <li>Evaluación de métricas físicas para diseñar y ajustar planes personalizados.</li>
-                        </ul>
-                        <div class="conectord">
-                            <div class="circulod"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
     <!-- SECCION PORTFOLIO -->
     <section id="portfolio" class="portfolio">
         <div class="contenido-seccion">
-            <h2>PORTFOLIO</h2>
+            <h2>Proyectos</h2>
             <p class="intro-portfolio">Sistemas web, apps mobile y proyectos de datos. Todo el código está en un solo repositorio.</p>
             <div class="grilla-proyectos">
                 <article class="tarjeta-proyecto">
@@ -402,17 +193,165 @@
         </div>
     </section>
 
+    <!-- SECCION COMO TRABAJO -->
+    <section id="como-trabajo" class="como-trabajo">
+        <div class="contenido-seccion">
+            <h2>Cómo trabajo</h2>
+            <p class="intro">Simple y sin sorpresas, de la primera charla a la entrega.</p>
+            <div class="pasos">
+                <div class="paso">
+                    <span class="numero">1</span>
+                    <h3>Me contás el problema</h3>
+                    <p>Por WhatsApp o mail. Entiendo cómo trabajás hoy y qué te está costando tiempo o plata.</p>
+                </div>
+                <div class="paso">
+                    <span class="numero">2</span>
+                    <h3>Te paso un presupuesto cerrado</h3>
+                    <p>Qué voy a hacer, en cuánto tiempo y a qué precio. Sin costos ocultos.</p>
+                </div>
+                <div class="paso">
+                    <span class="numero">3</span>
+                    <h3>Avances a la vista</h3>
+                    <p>Te muestro el progreso durante el desarrollo, así lo ajustamos sobre la marcha.</p>
+                </div>
+                <div class="paso">
+                    <span class="numero">4</span>
+                    <h3>Entrega con soporte</h3>
+                    <p>Te entrego funcionando, con documentación y soporte después de la entrega.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION SOBRE MI -->
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+            <h2>Sobre Mí</h2>
+            <p><span>Ayudo a empresas a que sus sistemas funcionen mejor: destrabo consultas lentas, limpio datos, conecto sistemas mediante APIs y automatizo tareas repetitivas.</span></p>
+            <p>Trabajo como desarrollador en el área de Sistemas de Digitrack. En 6 meses, como único desarrollador del proyecto y apoyándome en la IA, migré la aplicación web de la empresa a una plataforma low-code, optimicé las consultas que la trababan y automaticé la generación de tickets y avisos por mail.</p>
+            <p>Gran parte de mi trabajo es hablar con gerencia y con los operadores para entender las reglas del negocio. Vengo del área de la salud y de la atención al cliente, por eso entiendo el problema real antes de escribir una línea de código. Actualmente curso la Tecnicatura Superior en Desarrollo de Software.</p>
+
+            <div class="fila">
+                <div class="col">
+                    <h3>Herramientas</h3>
+                    <ul class="etiquetas">
+                        <li>SQL</li><li>Procedimientos almacenados</li><li>Optimización de consultas</li>
+                        <li>APIs REST</li><li>Node.js</li><li>PHP</li><li>JavaScript</li><li>React Native</li>
+                        <li>Python</li><li>Airflow</li><li>Docker</li><li>Low-code</li>
+                        <li>Power BI</li><li>Tableau</li><li>Excel</li><li>Desarrollo asistido por IA</li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <h3>Datos</h3>
+                    <ul class="datos">
+                        <li><strong>WhatsApp</strong> <a href="https://wa.me/5491130851825?text=Hola%20Ezequiel%2C%20vi%20tu%20web%20y%20quiero%20consultarte%20por%20un%20proyecto" target="_blank" rel="noopener">+54 9 11 3085-1825</a></li>
+                        <li><strong>Email</strong> <a href="mailto:e.delipetro@gmail.com">e.delipetro@gmail.com</a></li>
+                        <li><strong>Ubicación</strong> Buenos Aires, Argentina</li>
+                        <li><strong>Modalidad</strong> Remoto · Proyectos freelance</li>
+                        <li><strong>Idiomas</strong> Español nativo · Inglés B2</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="botones-cv">
+                <a href="cv/CV-Ezequiel-Delipetro.pdf" download><button>Descargar CV <i class="fa-solid fa-file-arrow-down"></i><span class="overlay"></span></button></a>
+                <a href="cv/Resume-Ezequiel-Delipetro-EN.pdf" download><button>Resume (English) <i class="fa-solid fa-file-arrow-down"></i><span class="overlay"></span></button></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION CURRICULUM -->
+    <section id="curriculum" class="curriculum">
+        <div class="contenido-seccion">
+            <h2>Experiencia y formación</h2>
+            <div class="fila">
+                <div class="col izquierda">
+                    <h3>Educación</h3>
+                    <div class="item izq">
+                        <h4>Tecnicatura Superior en Desarrollo de Software</h4>
+                        <span class="casa">Instituto Superior "Leopoldo Marechal"</span>
+                        <span class="fecha">03/2025 - Presente</span>
+                        <p>Formación técnica en lógica de programación, algoritmos y arquitectura de software, que complementa mi especialización en datos.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Data Engineering & Analytics</h4>
+                        <span class="casa">Coder House</span>
+                        <span class="fecha">01/2024 - 09/2024</span>
+                        <p>Formación intensiva en el ciclo de vida completo de los datos: extracción y transformación (ETL) con SQL y Python, y visualización con Power BI y Tableau.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Licenciatura en Nutrición</h4>
+                        <span class="casa">Universidad Nacional de La Matanza</span>
+                        <span class="fecha">2014 - 2022</span>
+                        <p>Mi primera carrera, donde desarrollé una fuerte mentalidad analítica: interpretación de información, seguimiento de indicadores y toma de decisiones basada en evidencia.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col derecha">
+                    <h3>Experiencia de trabajo</h3>
+                    <div class="item der">
+                        <h4>Desarrollador – Área de Sistemas</h4>
+                        <span class="casa">Digitrack</span>
+                        <span class="fecha">05/2026 - Presente</span>
+                        <p>Único desarrollador a cargo de la migración y la evolución de la aplicación web de la empresa, con desarrollo asistido por IA.</p>
+                        <ul>
+                            <li>Migración de la aplicación web a una plataforma low-code sobre una base de datos relacional.</li>
+                            <li>Optimización de consultas que trababan la aplicación al crecer el volumen de registros.</li>
+                            <li>Workers que consumen la API de un sistema externo de mesa de ayuda para generar tickets automáticamente y avisar por mail.</li>
+                            <li>Consumo de APIs externas y lectura automatizada de archivos Excel desde la base de datos.</li>
+                            <li>Limpieza de datos y desbloqueo de registros trabados por validaciones incorrectas.</li>
+                            <li>Relevamiento de reglas de negocio con gerencia y operadores.</li>
+                        </ul>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Asesor de Atención al Cliente</h4>
+                        <span class="casa">Swiss Medical Group</span>
+                        <span class="fecha">10/2020 - 02/2024</span>
+                        <ul>
+                            <li>Seleccionado para el área Life: atención personalizada a clientes y productores.</li>
+                            <li>Representante del área en las evaluaciones de calidad bajo normas ISO.</li>
+                            <li>Capacitación y onboarding de nuevos integrantes del equipo.</li>
+                        </ul>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Nutricionista Independiente</h4>
+                        <span class="casa">Consultorio particular, gimnasios y clubes de fútbol</span>
+                        <ul>
+                            <li>Interpretación de datos de pacientes y seguimiento de indicadores de rendimiento.</li>
+                            <li>Evaluación de métricas físicas para diseñar y ajustar planes personalizados.</li>
+                        </ul>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- SECCION CONTACTO -->
     <section id="contacto" class="contacto-simple">
         <div class="contenido-seccion">
             <h2>¿Trabajamos juntos?</h2>
-            <p>Contame qué proceso querés mejorar y te respondo con una propuesta.</p>
-            <a href="mailto:e.delipetro@gmail.com?subject=Consulta%20por%20proyecto" style="text-decoration: none;">
-                <button>
-                    Escribime <i class="fa-solid fa-envelope"></i>
-                    <span class="overlay"></span>
-                </button>
-            </a>
+            <p>Contame qué proceso querés mejorar y te respondo con una propuesta. La primera consulta no tiene costo.</p>
+            <div class="botones-contacto">
+                <a class="boton-whatsapp" href="https://wa.me/5491130851825?text=Hola%20Ezequiel%2C%20vi%20tu%20web%20y%20quiero%20consultarte%20por%20un%20proyecto" target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
+                <a class="boton-principal" href="mailto:e.delipetro@gmail.com?subject=Consulta%20por%20proyecto"><i class="fa-solid fa-envelope"></i> e.delipetro@gmail.com</a>
+            </div>
         </div>
     </section>
 
@@ -422,11 +361,18 @@
             <i class="fa-solid fa-angles-up"></i>
         </a>
         <div class="redes">
+            <a href="https://wa.me/5491130851825?text=Hola%20Ezequiel%2C%20vi%20tu%20web%20y%20quiero%20consultarte%20por%20un%20proyecto" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
             <a href="https://www.linkedin.com/in/ezedelipetro/" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
-            <a href="https://github.com/EzeDeli" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+            <a href="https://github.com/EzeDeli/portfolio" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
             <a href="mailto:e.delipetro@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
         </div>
+        <p class="pie-texto">© 2026 Ezequiel Delipetro · Desarrollador de Sistemas</p>
     </footer>
+
+    <!-- Boton flotante de WhatsApp, siempre visible -->
+    <a class="whatsapp-flotante" href="https://wa.me/5491130851825?text=Hola%20Ezequiel%2C%20vi%20tu%20web%20y%20quiero%20consultarte%20por%20un%20proyecto" target="_blank" rel="noopener" aria-label="Escribime por WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
 
     <script src="script.js"></script>
 </body>

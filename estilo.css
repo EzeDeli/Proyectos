@@ -60,55 +60,94 @@ html{
     background: linear-gradient(to top, rgba(48, 51, 46, 0.8), rgb(82, 95, 79)),
     url(fotos/Fondo.webp);
     background-size: cover;
-    height: 100vh;
+    min-height: 100vh;
     color: #000000;
     display: flex;
     align-items: center;
+    padding: 110px 20px 60px 20px;
 }
 .inicio .contenido-banner{
-    padding: 20px;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    padding: 40px;
     background-color: #D3D3D3;
-    max-width: 350px;
+    max-width: 960px;
     margin: auto;
-    text-align: center;
-    border-radius: 40px;
+    border-radius: 30px;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, .3);
+}
+.inicio .contenedor-img{
+    flex-shrink: 0;
 }
 .inicio .contenido-banner img{
-    margin-top: 40px;
-    border: 10px solid #6B8E23;
+    border: 8px solid #6B8E23;
     display: block;
-    width: 80%;
-    margin: auto;
+    width: 230px;
+    height: 230px;
+    object-fit: cover;
     border-radius: 100%;
+}
+.inicio .saludo{
+    color: #54701c;
+    font-weight: 600;
+    font-size: 17px;
+    margin-bottom: 6px;
 }
 .inicio .contenido-banner h1{
-    margin-top: 40px;
     font-size: 42px;
+    line-height: 48px;
     font-family: 'Righteous';
+    margin-bottom: 14px;
 }
-.inicio .contenido-banner h2{
+.inicio .bajada{
     font-size: 18px;
+    line-height: 26px;
+    margin-bottom: 24px;
+}
+.botones-banner, .botones-contacto{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+.boton-principal, .boton-whatsapp{
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 22px;
+    border-radius: 8px;
+    font-size: 16px;
     font-weight: 600;
-}
-.inicio .contenido-banner .subtitulo{
-    font-size: 14px;
-    margin-top: 8px;
-}
-.inicio .contenido-banner .redes a{
-    color: #6B8E23;
-    display: inline-block;
     text-decoration: none;
-    border: 1px solid #6B8E23;
-    border-radius: 100%;
-    width: 42px;
-    height: 42px;
-    line-height: 42px;
-    margin: 40px 5px;
-    font-size: 20px;
     transition: .3s;
 }
-.inicio .contenido-banner .redes a:hover{
+.boton-principal{
+    background-color: #2f3a1a;
+    color: #ffffff;
+}
+.boton-principal:hover{
     background-color: #6B8E23;
+}
+.boton-whatsapp{
+    background-color: #1fa855;
+    color: #ffffff;
+}
+.boton-whatsapp:hover{
+    background-color: #178a45;
+}
+.inicio .disponible{
+    margin-top: 18px;
+    font-size: 15px;
+    color: #2f3a1a;
+}
+.inicio .disponible .punto{
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #1fa855;
+    margin-right: 6px;
+    box-shadow: 0 0 0 4px rgba(31, 168, 85, .25);
 }
 .sobremi{
     background-color: #D3D3D3;
@@ -166,28 +205,6 @@ html{
     padding: 3px;
     font-weight: bold;
     border-radius: 5px;
-}
-.sobremi .fila .col .contenedor-intereses{
-    display: flex;
-    flex-wrap: wrap;
-}
-.sobremi .fila .col .contenedor-intereses .interes{
-    width: 100px;
-    height: 100px;
-    background-color: #6B8E23;
-    border-radius: 10px;
-    margin: 0 15px 15px 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    transition: .3s;
-}.sobremi .fila .col .contenedor-intereses .interes:hover{
-    background-color: #D3D3D3;
-}
-.sobremi .fila .col .contenedor-intereses .interes i{
-    font-size: 30px;
-    margin-bottom: 10px;
 }
 .sobremi button, .portfolio button, .contacto-simple button{
     cursor: pointer;
@@ -748,4 +765,164 @@ footer .arriba{
     .contacto .fila .col{
         width: 100%;
     }
+}
+
+/* SECCION COMO TRABAJO */
+.como-trabajo{
+    background-color: #D3D3D3;
+    color: #000000;
+    padding: 50px 20px;
+}
+.como-trabajo .contenido-seccion{
+    max-width: 1100px;
+    margin: auto;
+}
+.como-trabajo h2{
+    font-size: 48px;
+    font-family: 'Righteous';
+    text-align: center;
+    padding: 20px 0;
+}
+.como-trabajo .intro{
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+.pasos{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 20px;
+}
+.paso{
+    background-color: #ffffff;
+    border-radius: 12px;
+    padding: 24px;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, .08);
+}
+.paso .numero{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #6B8E23;
+    color: #ffffff;
+    font-family: 'Righteous';
+    font-size: 20px;
+    margin-bottom: 12px;
+}
+.paso h3{
+    font-size: 19px;
+    margin-bottom: 8px;
+}
+.paso p{
+    line-height: 22px;
+}
+
+/* Fondos alternados con el nuevo orden de secciones */
+.sobremi{
+    background-color: #e9e9e9;
+}
+.curriculum{
+    background-color: #D3D3D3;
+}
+.contacto-simple{
+    background-color: #e9e9e9;
+}
+
+/* Sobre mi: herramientas y datos */
+.sobremi .etiquetas{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+.sobremi .fila .col .etiquetas li{
+    margin: 0;
+    background-color: #6B8E23;
+    color: #ffffff;
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 15px;
+}
+.sobremi .fila .col{
+    padding-right: 30px;
+}
+.botones-cv{
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+.botones-cv button{
+    margin: 10px 0;
+}
+
+/* Contacto */
+.botones-contacto{
+    justify-content: center;
+    margin-top: 24px;
+}
+.pie-texto{
+    font-size: 14px;
+    color: #333333;
+}
+
+/* Boton flotante de WhatsApp */
+.whatsapp-flotante{
+    position: fixed;
+    right: 22px;
+    bottom: 22px;
+    width: 58px;
+    height: 58px;
+    border-radius: 50%;
+    background-color: #1fa855;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+    text-decoration: none;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, .3);
+    z-index: 100;
+    transition: transform .3s;
+}
+.whatsapp-flotante:hover{
+    transform: scale(1.08);
+}
+
+@media screen and (max-width:700px){
+    .inicio{
+        padding: 90px 16px 40px 16px;
+    }
+    .inicio .contenido-banner{
+        flex-direction: column;
+        text-align: center;
+        padding: 28px 20px;
+        gap: 20px;
+    }
+    .inicio .contenido-banner img{
+        width: 150px;
+        height: 150px;
+    }
+    .inicio .contenido-banner h1{
+        font-size: 30px;
+        line-height: 36px;
+    }
+    .botones-banner{
+        justify-content: center;
+    }
+    .como-trabajo h2{
+        font-size: 36px;
+    }
+    .sobremi .fila .col{
+        width: 100%;
+        padding-right: 0;
+        margin-bottom: 20px;
+    }
+}
+.botones-cv a{
+    text-decoration: none;
 }
