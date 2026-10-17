@@ -310,39 +310,92 @@
     <section id="portfolio" class="portfolio">
         <div class="contenido-seccion">
             <h2>PORTFOLIO</h2>
-            <div class="galeria">
-                <div class="proyecto">
-                    <img src="fotos/N°4. ETL de Datos Climáticos - API, Pandas, Redshift y Docker.PNG" alt="Proyecto ETL de datos climáticos">
-                    <div class="overlay">
-                        <h3>Data Engineering</h3>
-                        <p>ETL de Datos Climáticos: API, Pandas, Redshift, Airflow y Docker</p>
+            <p class="intro-portfolio">Sistemas web, apps mobile y proyectos de datos. Todo el código está en un solo repositorio.</p>
+            <div class="grilla-proyectos">
+                <article class="tarjeta-proyecto">
+                    <div class="imagen-proyecto"><img src="fotos/proyectos/cooperapp.png" alt="CooperApp" loading="lazy"></div>
+                    <div class="cuerpo-proyecto">
+                        <span class="categoria">Sistema web</span>
+                        <h3>CooperApp</h3>
+                        <p>Gestión para cooperativas y pymes: varias empresas en una plataforma, 4 roles, finanzas, stock y reportes en PDF/CSV. Fui el desarrollador principal del equipo.</p>
+                        <ul class="tecnologias"><li>Node.js</li><li>Express</li><li>MySQL</li></ul>
+                        <div class="acciones"><a class="btn-proyecto" href="https://github.com/EzeDeli/portfolio/tree/main/cooperapp" target="_blank" rel="noopener"><i class="fa-solid fa-book-open"></i> Ver caso de estudio</a></div>
                     </div>
-                </div>
-                <div class="proyecto">
-                    <img src="fotos/N°3 Power BI - Análisis de Facturación y Rendimiento de Adidas.PNG" alt="Dashboard de Power BI de Adidas">
-                    <div class="overlay">
-                        <h3>Power BI</h3>
-                        <p>Análisis de Facturación y Rendimiento de Adidas</p>
+                </article>
+                <article class="tarjeta-proyecto">
+                    <div class="imagen-proyecto"><img src="fotos/proyectos/fabregas.png" alt="Fábregas" loading="lazy"></div>
+                    <div class="cuerpo-proyecto">
+                        <span class="categoria">App mobile</span>
+                        <h3>Fábregas</h3>
+                        <p>App de tienda de tecnología con catálogo por secciones, detalle de producto, sucursales y menú lateral.</p>
+                        <ul class="tecnologias"><li>React Native</li><li>Expo Router</li><li>TypeScript</li></ul>
+                        <div class="acciones"><a class="btn-proyecto principal" href="demo/fabregas/"><i class="fa-solid fa-play"></i> Probar demo</a><a class="btn-proyecto" href="https://github.com/EzeDeli/portfolio/tree/main/mobile/fabregas" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> Código</a></div>
                     </div>
-                </div>
-                <div class="proyecto">
-                    <img src="fotos/N°2 Tableau - Análisis de Bodegas y Vinos.PNG" alt="Dashboard de Tableau de bodegas y vinos">
-                    <div class="overlay">
-                        <h3>Tableau</h3>
-                        <p>Análisis de Bodegas y Vinos</p>
+                </article>
+                <article class="tarjeta-proyecto">
+                    <div class="imagen-proyecto"><img src="fotos/proyectos/abm-php.png" alt="ABM de usuarios" loading="lazy"></div>
+                    <div class="cuerpo-proyecto">
+                        <span class="categoria">Sistema web</span>
+                        <h3>ABM de usuarios</h3>
+                        <p>Alta, baja y modificación de usuarios con login, protegido contra inyección SQL, XSS y CSRF.</p>
+                        <ul class="tecnologias"><li>PHP</li><li>MySQL</li><li>Bootstrap</li></ul>
+                        <div class="acciones"><a class="btn-proyecto" href="https://github.com/EzeDeli/portfolio/tree/main/web/abm-usuarios-php" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> Código</a></div>
                     </div>
-                </div>
-                <div class="proyecto">
-                    <img src="fotos/N°1  Excel - Analisis y Dashboard Interactivo.PNG" alt="Dashboard interactivo en Excel">
-                    <div class="overlay">
-                        <h3>Excel</h3>
-                        <p>Análisis y Dashboard Interactivo</p>
+                </article>
+                <article class="tarjeta-proyecto">
+                    <div class="imagen-proyecto"><img src="fotos/proyectos/calculadora.jpeg" alt="Calculadora" loading="lazy" style="object-position: bottom;"></div>
+                    <div class="cuerpo-proyecto">
+                        <span class="categoria">App mobile</span>
+                        <h3>Calculadora</h3>
+                        <p>Calculadora con parser propio que respeta la precedencia de operaciones, sin usar eval.</p>
+                        <ul class="tecnologias"><li>React Native</li><li>TypeScript</li></ul>
+                        <div class="acciones"><a class="btn-proyecto" href="https://github.com/EzeDeli/portfolio/tree/main/mobile/calculadora" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> Código</a></div>
                     </div>
-                </div>
+                </article>
+                <article class="tarjeta-proyecto">
+                    <div class="imagen-proyecto"><img src="fotos/proyectos/etl.png" alt="ETL de datos climáticos" loading="lazy"></div>
+                    <div class="cuerpo-proyecto">
+                        <span class="categoria">Datos</span>
+                        <h3>ETL de datos climáticos</h3>
+                        <p>Pipeline que corre cada hora: API del clima, Pandas y data warehouse, con alertas por mail.</p>
+                        <ul class="tecnologias"><li>Python</li><li>Airflow</li><li>Docker</li></ul>
+                        <div class="acciones"><a class="btn-proyecto" href="https://github.com/EzeDeli/portfolio/tree/main/datos/etl-clima" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> Código</a></div>
+                    </div>
+                </article>
+                <article class="tarjeta-proyecto">
+                    <div class="imagen-proyecto"><img src="fotos/proyectos/powerbi.png" alt="Facturación de Adidas" loading="lazy"></div>
+                    <div class="cuerpo-proyecto">
+                        <span class="categoria">Datos</span>
+                        <h3>Facturación de Adidas</h3>
+                        <p>Modelo de datos y dashboard interactivo de ventas y rentabilidad, con informe de conclusiones.</p>
+                        <ul class="tecnologias"><li>Power BI</li><li>SQL</li></ul>
+                        <div class="acciones"><a class="btn-proyecto" href="https://github.com/EzeDeli/portfolio/tree/main/datos/powerbi-adidas" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> Ver proyecto</a></div>
+                    </div>
+                </article>
+                <article class="tarjeta-proyecto">
+                    <div class="imagen-proyecto"><img src="fotos/proyectos/tableau.png" alt="Bodegas y vinos" loading="lazy"></div>
+                    <div class="cuerpo-proyecto">
+                        <span class="categoria">Datos</span>
+                        <h3>Bodegas y vinos</h3>
+                        <p>Análisis del mercado de vinos españoles: KPIs, mapa por región y evolución de precios.</p>
+                        <ul class="tecnologias"><li>Tableau</li></ul>
+                        <div class="acciones"><a class="btn-proyecto" href="https://github.com/EzeDeli/portfolio/tree/main/datos/tableau-vinos" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> Ver proyecto</a></div>
+                    </div>
+                </article>
+                <article class="tarjeta-proyecto">
+                    <div class="imagen-proyecto"><img src="fotos/proyectos/excel.png" alt="Dashboard en Excel" loading="lazy"></div>
+                    <div class="cuerpo-proyecto">
+                        <span class="categoria">Datos</span>
+                        <h3>Dashboard en Excel</h3>
+                        <p>Dashboard de presupuesto y estado de obras públicas, con filtros por prioridad, estado y resultado.</p>
+                        <ul class="tecnologias"><li>Excel</li></ul>
+                        <div class="acciones"><a class="btn-proyecto" href="https://github.com/EzeDeli/portfolio/tree/main/datos/excel-dashboard" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> Ver proyecto</a></div>
+                    </div>
+                </article>
             </div>
-            <a href="https://github.com/EzeDeli/portfolio" style="text-decoration: none;">
+            <a href="https://github.com/EzeDeli/portfolio" target="_blank" rel="noopener" style="text-decoration: none;">
                 <button>
-                    Ver proyectos en GitHub <i class="fa-brands fa-github"></i>
+                    Ver todo en GitHub <i class="fa-brands fa-github"></i>
                     <span class="overlay"></span>
                 </button>
             </a>
