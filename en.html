@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ezequiel Delipetro | Systems & Data Developer</title>
+    <meta name="description" content="I automate processes and fix slow systems: databases, API integrations, web development and dashboards. Available for freelance projects, working remotely from Argentina.">
+    <link rel="alternate" hreflang="es" href="https://ezedeli.github.io/Proyectos/">
+    <link rel="alternate" hreflang="en" href="https://ezedeli.github.io/Proyectos/en.html">
+    <!-- Preview when the link is shared on WhatsApp, LinkedIn, etc. -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://ezedeli.github.io/Proyectos/en.html">
+    <meta property="og:title" content="Ezequiel Delipetro | Systems & Data Developer">
+    <meta property="og:description" content="I automate processes and fix slow systems: databases, APIs, web development and dashboards. Available for freelance projects.">
+    <meta property="og:image" content="https://ezedeli.github.io/Proyectos/fotos/compartir.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:locale" content="en_US">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="icon" href="fotos/Perfil.jpg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <!-- HEADER MENU -->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#">Deli.Data</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">HOME</a></li>
+                    <li><a href="#servicios" onclick="seleccionar()">SERVICES</a></li>
+                    <li><a href="#portfolio" onclick="seleccionar()">PROJECTS</a></li>
+                    <li><a href="#como-trabajo" onclick="seleccionar()">HOW I WORK</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">ABOUT</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()">CONTACT</a></li>
+                    <li><a href="index.html" class="idioma" lang="es" title="Ver en español">ES</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+
+    <!-- HOME -->
+    <section id="inicio" class="inicio">
+        <div class="contenido-banner">
+            <div class="contenedor-img">
+                <img src="fotos/Perfil.jpg" alt="Photo of Ezequiel Delipetro">
+            </div>
+            <div class="texto-banner">
+                <p class="saludo">Hi, I'm Ezequiel Delipetro</p>
+                <h1>I automate processes and fix slow systems</h1>
+                <p class="bajada">Systems developer. I help with databases, API integrations, web development and reporting, so your business stops losing hours on manual work.</p>
+                <div class="botones-banner">
+                    <a class="boton-principal" href="#portfolio"><i class="fa-solid fa-folder-open"></i> See projects</a>
+                    <a class="boton-whatsapp" href="https://wa.me/5491130851825?text=Hi%20Ezequiel%2C%20I%20saw%20your%20website%20and%20I%27d%20like%20to%20ask%20about%20a%20project" target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i> Message me on WhatsApp</a>
+                </div>
+                <p class="disponible"><span class="punto"></span> Available for freelance projects · Remote · Argentina (GMT-3)</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section id="servicios" class="servicios">
+        <div class="contenido-seccion">
+            <h2>Services</h2>
+            <p class="intro">Is your system getting slow, are manual processes eating up hours, or is your data scattered across spreadsheets? I can help with:</p>
+            <div class="galeria-servicios">
+                <div class="servicio">
+                    <i class="fa-solid fa-database"></i>
+                    <h3>Database optimization</h3>
+                    <p>Queries that slow down as data grows, cleanup of inconsistent records and validations that don't work.</p>
+                </div>
+                <div class="servicio">
+                    <i class="fa-solid fa-code"></i>
+                    <h3>Custom web development</h3>
+                    <p>Complete web applications, front end and back end, built with AI to deliver fast: internal systems, forms, admin panels.</p>
+                </div>
+                <div class="servicio">
+                    <i class="fa-solid fa-gears"></i>
+                    <h3>Process automation</h3>
+                    <p>Integrations between systems through APIs, automatic ticket creation, email alerts and scheduled tasks.</p>
+                </div>
+                <div class="servicio">
+                    <i class="fa-solid fa-arrow-right-arrow-left"></i>
+                    <h3>ETL and data loading</h3>
+                    <p>I move your data from Excel, CSV or APIs into a clean database, ready for analysis.</p>
+                </div>
+                <div class="servicio">
+                    <i class="fa-solid fa-chart-column"></i>
+                    <h3>Dashboards and reports</h3>
+                    <p>Power BI, Tableau or Excel dashboards so you can make decisions with up-to-date data.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="portfolio" class="portfolio">
+        <div class="contenido-seccion">
+            <h2>Projects</h2>
+            <p class="intro-portfolio">Web systems, mobile apps and data projects. All the code lives in a single repository.</p>
+            <div class="grilla-proyectos">
+                <article class="tarjeta-proyecto">
+                    <div class="imagen-proyecto"><img src="fotos/proyectos/optimizacion-sql.png" alt="SQL query optimization: times before and after" loading="lazy"></div>
+                    <div class="cuerpo-proyecto">
+                        <span class="categoria">Databases</span>
+                        <h3>SQL query optimization</h3>
+                        <p>Six slow queries on 1 million orders, with times measured before and after. One went from over 2 minutes to 142 ms, with the same result.</p>
+                        <ul class="tecnologias"><li>SQL</li><li>MySQL / MariaDB</li><li>Python</li></ul>
+                        <div class="acciones"><a class="btn-proyecto" href="https://github.com/EzeDeli/portfolio/blob/main/datos/optimizacion-sql/README.en.md" target="_blank" rel="noopener"><i class="fa-solid fa-book-open"></i> Read the case</a></div>
+                    </div>
+                </article>
+                <article class="tarjeta-proyecto">
+                    <div class="imagen-proyecto"><img src="fotos/proyectos/carga-excel.png" alt="Summary email of the automated load" loading="lazy"></div>
+                    <div class="cuerpo-proyecto">
+                        <span class="categoria">Automation</span>
+                        <h3>Automated spreadsheet loading</h3>
+                        <p>Each branch's spreadsheets load themselves into the database: every row is cleaned and validated, errors are set aside with the reason, and a summary email is sent.</p>
+                        <ul class="tecnologias"><li>Python</li><li>SQL</li><li>SMTP</li></ul>
+                        <div class="acciones"><a class="btn-proyecto" href="https://github.com/EzeDeli/portfolio/blob/main/automatizacion/carga-excel/README.en.md" target="_blank" rel="noopener"><i class="fa-solid fa-book-open"></i> Read the case</a></div>
+                    </div>
+                </article>
+                <article class="tarjeta-proyecto">
+                    <div class="imagen-proyecto"><img src="fotos/proyectos/cooperapp.png" alt="CooperApp" loading="lazy"></div>
+                    <div class="cuerpo-proyecto">
+                        <span class="categoria">Web system</span>
+                        <h3>CooperApp</h3>
+                        <p>Management system for cooperatives and small businesses: multiple companies on one platform, 4 roles, finances, stock and PDF/CSV reports. I was the team's lead developer.</p>
+                        <ul class="tecnologias"><li>Node.js</li><li>Express</li><li>MySQL</li></ul>
+                        <div class="acciones"><a class="btn-proyecto" href="https://github.com/EzeDeli/portfolio/blob/main/cooperapp/README.en.md" target="_blank" rel="noopener"><i class="fa-solid fa-book-open"></i> Read the case study</a></div>
+                    </div>
+                </article>
+                <article class="tarjeta-proyecto">
+                    <div class="imagen-proyecto"><img src="fotos/proyectos/fabregas.png" alt="Fábregas" loading="lazy"></div>
+                    <div class="cuerpo-proyecto">
+                        <span class="categoria">Mobile app</span>
+                        <h3>Fábregas</h3>
+                        <p>Tech store app with a catalog by section, product details, branches and a side menu.</p>
+                        <ul class="tecnologias"><li>React Native</li><li>Expo Router</li><li>TypeScript</li></ul>
+                        <div class="acciones"><a class="btn-proyecto principal" href="demo/fabregas/"><i class="fa-solid fa-play"></i> Try the demo</a><a class="btn-proyecto" href="https://github.com/EzeDeli/portfolio/tree/main/mobile/fabregas" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> Code</a></div>
+                    </div>
+                </article>
+                <article class="tarjeta-proyecto">
+                    <div class="imagen-proyecto"><img src="fotos/proyectos/abm-php.png" alt="User management" loading="lazy"></div>
+                    <div class="cuerpo-proyecto">
+                        <span class="categoria">Web system</span>
+                        <h3>User management (CRUD)</h3>
+                        <p>Create, edit and delete users with login, protected against SQL injection, XSS and CSRF.</p>
+                        <ul class="tecnologias"><li>PHP</li><li>MySQL</li><li>Bootstrap</li></ul>
+                        <div class="acciones"><a class="btn-proyecto" href="https://github.com/EzeDeli/portfolio/tree/main/web/abm-usuarios-php" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> Code</a></div>
+                    </div>
+                </article>
+                <article class="tarjeta-proyecto">
+                    <div class="imagen-proyecto"><img src="fotos/proyectos/calculadora.jpeg" alt="Calculator" loading="lazy" style="object-position: bottom;"></div>
+                    <div class="cuerpo-proyecto">
+                        <span class="categoria">Mobile app</span>
+                        <h3>Calculator</h3>
+                        <p>Calculator with its own parser that respects operator precedence, without using eval.</p>
+                        <ul class="tecnologias"><li>React Native</li><li>TypeScript</li></ul>
+                        <div class="acciones"><a class="btn-proyecto" href="https://github.com/EzeDeli/portfolio/tree/main/mobile/calculadora" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> Code</a></div>
+                    </div>
+                </article>
+                <article class="tarjeta-proyecto">
+                    <div class="imagen-proyecto"><img src="fotos/proyectos/etl.png" alt="Weather data ETL" loading="lazy"></div>
+                    <div class="cuerpo-proyecto">
+                        <span class="categoria">Data</span>
+                        <h3>Weather data ETL</h3>
+                        <p>Hourly pipeline: weather API, Pandas and a data warehouse, with email alerts.</p>
+                        <ul class="tecnologias"><li>Python</li><li>Airflow</li><li>Docker</li></ul>
+                        <div class="acciones"><a class="btn-proyecto" href="https://github.com/EzeDeli/portfolio/tree/main/datos/etl-clima" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> Code</a></div>
+                    </div>
+                </article>
+                <article class="tarjeta-proyecto">
+                    <div class="imagen-proyecto"><img src="fotos/proyectos/powerbi.png" alt="Adidas sales" loading="lazy"></div>
+                    <div class="cuerpo-proyecto">
+                        <span class="categoria">Data</span>
+                        <h3>Adidas sales</h3>
+                        <p>Data model and interactive sales and profitability dashboard, with a findings report.</p>
+                        <ul class="tecnologias"><li>Power BI</li><li>SQL</li></ul>
+                        <div class="acciones"><a class="btn-proyecto" href="https://github.com/EzeDeli/portfolio/tree/main/datos/powerbi-adidas" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> See project</a></div>
+                    </div>
+                </article>
+                <article class="tarjeta-proyecto">
+                    <div class="imagen-proyecto"><img src="fotos/proyectos/tableau.png" alt="Wineries and wines" loading="lazy"></div>
+                    <div class="cuerpo-proyecto">
+                        <span class="categoria">Data</span>
+                        <h3>Wineries and wines</h3>
+                        <p>Analysis of the Spanish wine market: KPIs, map by region and price trends.</p>
+                        <ul class="tecnologias"><li>Tableau</li></ul>
+                        <div class="acciones"><a class="btn-proyecto" href="https://github.com/EzeDeli/portfolio/tree/main/datos/tableau-vinos" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> See project</a></div>
+                    </div>
+                </article>
+                <article class="tarjeta-proyecto">
+                    <div class="imagen-proyecto"><img src="fotos/proyectos/excel.png" alt="Excel dashboard" loading="lazy"></div>
+                    <div class="cuerpo-proyecto">
+                        <span class="categoria">Data</span>
+                        <h3>Excel dashboard</h3>
+                        <p>Public works budget and progress dashboard, with filters by priority, status and outcome.</p>
+                        <ul class="tecnologias"><li>Excel</li></ul>
+                        <div class="acciones"><a class="btn-proyecto" href="https://github.com/EzeDeli/portfolio/tree/main/datos/excel-dashboard" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> See project</a></div>
+                    </div>
+                </article>
+            </div>
+            <a href="https://github.com/EzeDeli/portfolio/blob/main/README.en.md" target="_blank" rel="noopener" style="text-decoration: none;">
+                <button>
+                    See everything on GitHub <i class="fa-brands fa-github"></i>
+                    <span class="overlay"></span>
+                </button>
+            </a>
+        </div>
+    </section>
+
+    <!-- HOW I WORK -->
+    <section id="como-trabajo" class="como-trabajo">
+        <div class="contenido-seccion">
+            <h2>How I work</h2>
+            <p class="intro">Simple and with no surprises, from the first call to delivery.</p>
+            <div class="pasos">
+                <div class="paso">
+                    <span class="numero">1</span>
+                    <h3>You tell me the problem</h3>
+                    <p>By WhatsApp or email. I learn how you work today and what it is costing you in time or money.</p>
+                </div>
+                <div class="paso">
+                    <span class="numero">2</span>
+                    <h3>I send you a fixed quote</h3>
+                    <p>What I will do, how long it will take and what it will cost. No hidden fees.</p>
+                </div>
+                <div class="paso">
+                    <span class="numero">3</span>
+                    <h3>Visible progress</h3>
+                    <p>I show you the progress during development, so we can adjust along the way.</p>
+                </div>
+                <div class="paso">
+                    <span class="numero">4</span>
+                    <h3>Delivery with support</h3>
+                    <p>You get it working, with documentation and support after delivery.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+            <h2>About me</h2>
+            <p><span>I help companies get more out of their systems: I fix slow queries, clean up data, connect systems through APIs and automate repetitive tasks.</span></p>
+            <p>I work as a developer in the Systems department at Digitrack, an Argentine company. In 6 months, as the project's only developer and working with AI, I migrated the company's web application to a low-code platform, optimized the queries that were slowing it down, and automated the creation of tickets and email alerts.</p>
+            <p>A big part of my job is talking with management and operators to understand the business rules. I come from healthcare and customer service, so I understand the real problem before writing a single line of code. I am currently studying for an Associate Degree in Software Development.</p>
+
+            <div class="fila">
+                <div class="col">
+                    <h3>Tools</h3>
+                    <ul class="etiquetas">
+                        <li>SQL</li><li>Stored procedures</li><li>Query optimization</li>
+                        <li>REST APIs</li><li>Node.js</li><li>PHP</li><li>JavaScript</li><li>React Native</li>
+                        <li>Python</li><li>Airflow</li><li>Docker</li><li>Low-code</li>
+                        <li>Power BI</li><li>Tableau</li><li>Excel</li><li>AI-assisted development</li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <h3>Details</h3>
+                    <ul class="datos">
+                        <li><strong>WhatsApp</strong> <a href="https://wa.me/5491130851825?text=Hi%20Ezequiel%2C%20I%20saw%20your%20website%20and%20I%27d%20like%20to%20ask%20about%20a%20project" target="_blank" rel="noopener">+54 9 11 3085-1825</a></li>
+                        <li><strong>Email</strong> <a href="mailto:e.delipetro@gmail.com">e.delipetro@gmail.com</a></li>
+                        <li><strong>Location</strong> Buenos Aires, Argentina (GMT-3)</li>
+                        <li><strong>Work mode</strong> Remote · Freelance projects</li>
+                        <li><strong>Languages</strong> Spanish (native) · English (B2)</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="botones-cv">
+                <a href="cv/Resume-Ezequiel-Delipetro-EN.pdf" download><button>Download resume <i class="fa-solid fa-file-arrow-down"></i><span class="overlay"></span></button></a>
+                <a href="cv/CV-Ezequiel-Delipetro.pdf" download><button>CV (Spanish) <i class="fa-solid fa-file-arrow-down"></i><span class="overlay"></span></button></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- EXPERIENCE AND EDUCATION -->
+    <section id="curriculum" class="curriculum">
+        <div class="contenido-seccion">
+            <h2>Experience and education</h2>
+            <div class="fila">
+                <div class="col izquierda">
+                    <h3>Education</h3>
+                    <div class="item izq">
+                        <h4>Associate Degree in Software Development</h4>
+                        <span class="casa">Instituto Superior "Leopoldo Marechal"</span>
+                        <span class="fecha">03/2025 - Present</span>
+                        <p>Technical training in programming logic, algorithms and software architecture, complementing my data specialization.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Data Engineering & Analytics</h4>
+                        <span class="casa">Coder House</span>
+                        <span class="fecha">01/2024 - 09/2024</span>
+                        <p>Intensive training in the full data lifecycle: extraction and transformation (ETL) with SQL and Python, and visualization with Power BI and Tableau.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Bachelor's Degree in Nutrition</h4>
+                        <span class="casa">Universidad Nacional de La Matanza</span>
+                        <span class="fecha">2014 - 2022</span>
+                        <p>My first degree, where I developed a strong analytical mindset: interpreting information, tracking indicators and making evidence-based decisions.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col derecha">
+                    <h3>Work experience</h3>
+                    <div class="item der">
+                        <h4>Developer – Systems Department</h4>
+                        <span class="casa">Digitrack</span>
+                        <span class="fecha">05/2026 - Present</span>
+                        <p>Sole developer in charge of migrating and evolving the company's web application, with AI-assisted development.</p>
+                        <ul>
+                            <li>Migrated the web application to a low-code platform on a relational database.</li>
+                            <li>Optimized queries that froze the application as the number of records grew.</li>
+                            <li>Workers that call an external help desk system's API to create tickets automatically and send email alerts.</li>
+                            <li>Integrated external APIs and automated reading Excel files from the database.</li>
+                            <li>Cleaned data and unblocked records stuck by faulty validations.</li>
+                            <li>Gathered business rules with management and operators.</li>
+                        </ul>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Customer Service Advisor</h4>
+                        <span class="casa">Swiss Medical Group</span>
+                        <span class="fecha">10/2020 - 02/2024</span>
+                        <ul>
+                            <li>Selected for the Life insurance area: personalized service to clients and brokers.</li>
+                            <li>Represented the area in ISO quality assessments.</li>
+                            <li>Trained and onboarded new team members.</li>
+                        </ul>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Independent Nutritionist</h4>
+                        <span class="casa">Private practice, gyms and football clubs</span>
+                        <ul>
+                            <li>Interpreted patient data and tracked performance indicators.</li>
+                            <li>Assessed physical metrics to design and adjust personalized plans.</li>
+                        </ul>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contacto" class="contacto-simple">
+        <div class="contenido-seccion">
+            <h2>Shall we work together?</h2>
+            <p>Tell me which process you want to improve and I'll reply with a proposal. The first consultation is free.</p>
+            <div class="botones-contacto">
+                <a class="boton-whatsapp" href="https://wa.me/5491130851825?text=Hi%20Ezequiel%2C%20I%20saw%20your%20website%20and%20I%27d%20like%20to%20ask%20about%20a%20project" target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
+                <a class="boton-principal" href="mailto:e.delipetro@gmail.com?subject=Project%20inquiry"><i class="fa-solid fa-envelope"></i> e.delipetro@gmail.com</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+        <a href="#inicio" class="arriba" aria-label="Back to top">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <div class="redes">
+            <a href="https://wa.me/5491130851825?text=Hi%20Ezequiel%2C%20I%20saw%20your%20website%20and%20I%27d%20like%20to%20ask%20about%20a%20project" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="https://www.linkedin.com/in/ezedelipetro/" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="https://github.com/EzeDeli/portfolio/blob/main/README.en.md" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+            <a href="mailto:e.delipetro@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+        </div>
+        <p class="pie-texto">© 2026 Ezequiel Delipetro · Systems Developer</p>
+    </footer>
+
+    <!-- Floating WhatsApp button, always visible -->
+    <a class="whatsapp-flotante" href="https://wa.me/5491130851825?text=Hi%20Ezequiel%2C%20I%20saw%20your%20website%20and%20I%27d%20like%20to%20ask%20about%20a%20project" target="_blank" rel="noopener" aria-label="Message me on WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <script src="script.js"></script>
+</body>
+</html>

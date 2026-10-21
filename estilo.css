@@ -926,3 +926,10 @@ footer .arriba{
 .botones-cv a{
     text-decoration: none;
 }
+
+/* Selector de idioma ES / EN */
+.contenedor-header header nav ul li a.idioma{
+    border: 1px solid currentColor;
+    border-radius: 6px;
+    padding: 2px 10px;
+}
