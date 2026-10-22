@@ -28,7 +28,8 @@ html{
 }
 .contenedor-header header .logo a{
     font-family: 'Righteous';
-    font-size: 36px;
+    font-size: 26px;
+    white-space: nowrap;
     color: #6B8E23;
     text-decoration: none;
 }
@@ -932,4 +933,15 @@ footer .arriba{
     border: 1px solid currentColor;
     border-radius: 6px;
     padding: 2px 10px;
+}
+
+/* Menú en pantallas medianas: que ningún ítem se parta en dos líneas */
+.contenedor-header header nav ul li a{
+    white-space: nowrap;
+}
+@media screen and (max-width:1150px) and (min-width:981px){
+    .contenedor-header header nav ul li a{
+        margin: 0 7px;
+        font-size: 14px;
+    }
 }
